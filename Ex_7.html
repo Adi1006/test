@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format</title>
+</head>
+<style>
+    .container{
+     display: grid;
+     grid-template-columns: 20% 80%;
+     grid-gap: 10px;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 75px 500px 75px;
+        grid-gap: 10px;
+    }
+    .main-section{
+        display: grid;
+       grid-template-columns: 80% 20%;
+       grid-gap: 10px;
+    }
+    .item{
+        background-color: orange;
+        padding: 10px;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="item">NAV</div>
+        <div class="main">
+               <div class="item">header</div>
+                   <div class="main-section">
+                         <div class="item">article</div>
+                         <div class="item">ads</div>
+                   </div>
+         <div class="item">footer</div>          
+        </div>
+    </div>
+</body>
+</html>
